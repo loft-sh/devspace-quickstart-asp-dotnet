@@ -18,11 +18,8 @@ ADD . .
 RUN dotnet publish -c Release -o bin
 
 # Application port (optional)
-EXPOSE 5000
+EXPOSE 7213
 
-# Container start command for development
-# Allows DevSpace to restart the dev container
-# It is also possible to override this in devspace.yaml via images.*.cmd
 CMD ["dotnet", "run"]
 
 
